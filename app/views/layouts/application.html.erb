@@ -16,7 +16,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to 'saas', root_path, class: 'navbar-brand' %>
+      <%= link_to root_path, class: 'navbar-brand' do %>
+        <i class="fa fa-users"></i>
+        SaaS
+      <% end %>
+      
     </div>
     
     <div class="collapse navbar-collapse" id="main-nav-collapse">
@@ -29,7 +33,7 @@
 </nav>
 
 <div class="container">
-<%= yield %>
+  <%= yield %>
 </div>
 
 </body>
